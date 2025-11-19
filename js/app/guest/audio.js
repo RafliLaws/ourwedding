@@ -74,6 +74,12 @@ export const audio = (() => {
 
             if (playOnOpen) {
                 play();
+                   const judul = document.querySelectorAll("h2")
+    setTimeout(() => {
+        judul.forEach(element => {
+            element.classList.add("gold")
+        });
+    }, 46000);
             }
         });
 

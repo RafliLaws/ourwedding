@@ -113,3 +113,20 @@ svg {
 .no-gap-bottom {
     margin-bottom: -0.75rem !important;
 }
+
+.gold {
+    background: -webkit-linear-gradient(#8a6f48,#FFDF00) !important; 
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    transition: background 1s;
+}
+
+h2.gold {
+  opacity: 1;
+  animation: fade 0.6s ease;
+}
+
+@keyframes fade {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
