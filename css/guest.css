@@ -125,14 +125,35 @@ h2.gold {
   opacity: 1;
   animation: fade 0.6s ease;
 }
-
+/* 
 .gold-box {
-    box-shadow: 0 0 20px 1px gold !important;
+    box-shadow: 0 0 0px 0px gold;
     opacity: 1;
-    animation: fade 0.6s ease;
-}
+    animation: ilang 2s ease forwards;
+} */
 
 @keyframes fade {
   from { opacity: 0; }
   to { opacity: 1; }
 }
+/* 
+@keyframes ilang {
+  from { box-shadow: 0 0 0px 0px gold; }
+  to { box-shadow: 0 0 20px 1px gold !important; }
+}
+ */
+.gold-box {
+  --glow: 0 0 10px 1px gold;
+  box-shadow: var(--glow) !important;
+  opacity: 1;
+  animation: fade 2s ease-out forwards;
+}
+/* 
+@keyframes ilang {
+  from {
+    --glow: 0 0 0px 1px gold;
+  }
+  to {
+    --glow: 0 0 20px 1px gold;
+  }
+} */
