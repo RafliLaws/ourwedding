@@ -80,6 +80,12 @@ export const audio = (() => {
             element.classList.add("gold")
         });
     }, 46000);
+                   const box = document.querySelectorAll("#gold-box")
+    setTimeout(() => {
+        box.forEach(element => {
+            element.classList.add("gold-box")
+        });
+    }, 46000);
             }
         });
 

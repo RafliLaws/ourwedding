@@ -126,6 +126,12 @@ h2.gold {
   animation: fade 0.6s ease;
 }
 
+.gold-box {
+    box-shadow: 0 0 20px 1px gold !important;
+    opacity: 1;
+    animation: fade 0.6s ease;
+}
+
 @keyframes fade {
   from { opacity: 0; }
   to { opacity: 1; }
