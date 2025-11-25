@@ -165,6 +165,8 @@ export const gif = (() => {
             key: config.get('tenor_key'),
             country: lang.getCountry(),
             locale: lang.getLocale(),
+            contentfilter: 'high',
+            q: 'amazed',
             ...(params ?? {}),
         };
 
