@@ -1704,23 +1704,5 @@
     //         element.classList.add("gold")
     //     });
     // }, 15000);
-
-    const el = document.getElementById("guest-name");
-    const text = el.dataset.message;
-
-    const exceptions = ["dan"];
-
-    const result = text
-      .toLowerCase()
-      .split(" ")
-      .map((word, index) => {
-        if (exceptions.includes(word) && index !== 0) {
-          return word; // tetap lowercase
-        }
-        return word.charAt(0).toUpperCase() + word.slice(1);
-      })
-      .join(" ");
-
-    el.textContent = result;
   </script>
 </html>
