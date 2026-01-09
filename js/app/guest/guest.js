@@ -93,6 +93,19 @@ export const guest = (() => {
   //         form.value = information.get('name') ?? name;
   //     }
   // };
+  const titleCaseWithException = (text, exceptions = ["dan"]) => {
+    return text
+      .toLowerCase()
+      .split(" ")
+      .map((word, index) => {
+        if (!word) return "";
+        if (exceptions.includes(word) && index !== 0) {
+          return word;
+        }
+        return word.charAt(0).toUpperCase() + word.slice(1);
+      })
+      .join(" ");
+  };
 
   const showGuestName = () => {
     /**
